@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.background {
+  filter: grayscale(0.8);
+  height: 100vh;
+  flex: calc(100vw / 5);
+  transition: all 0.3s ease-out;
+}
+.background--active {
+  filter: grayscale(0);
+  flex: calc(100vw / 2 + 20%);
+  transition: all 0.3s ease-in;
+}
